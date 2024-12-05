@@ -5,7 +5,7 @@ import axios from "axios";
 
 import NavBar from "@/Components/NavBar.vue";
 import Footer from "@/Components/Footer.vue";
-import Galleria from 'primevue/galleria';
+import Testimonials from "@/Components/Testimonials.vue";
 
 let thread = ref([])
 let threadImages = ref([])
@@ -16,8 +16,12 @@ onMounted(async () => {
 });
 
 async function getVrgThread() {
-    await axios.get("/vrgthread").then(response => (
-        threadImages = getThreadImageLinks(response.data.thread)
+    await axios.get("/vrgthread").then((response) => (
+        thread.value = response.data.thread,
+        console.log(getRandomPosts(response.data.thread)),
+
+
+        threadImages.value = getThreadImageLinks(response.data.thread)
     ));
 }
 
@@ -30,6 +34,10 @@ function getThreadImageLinks(thread) {
         }
     }
     return imageLinks
+}
+
+function getRandomPosts(thread) {
+    return Array.from({ length: Math.floor(3) }).map(x => thread.posts[Math.floor(Math.random() * thread.posts.length)]);
 }
 
 const responsiveOptions = ref([
@@ -84,13 +92,8 @@ const responsiveOptions = ref([
 <template>
     <NavBar></NavBar>
 
-    <div v-if="threadImages" class="card">
-        <Galleria :value="threadImages" :numVisible="5" :showThumbnails="true" :showIndicators="false">
-            <template #item="slotProps">
-                <img crossorigin='anonymous' :src="slotProps.item"
-                    :alt="'A picture depicting our virtual reality group'" />
-            </template>
-        </Galleria>
+    <div v-if="thread.posts" class="p-2">
+        <Testimonials :testimonials="getRandomPosts(thread)" />
     </div>
 
     <footer class="bg-gray-900">
