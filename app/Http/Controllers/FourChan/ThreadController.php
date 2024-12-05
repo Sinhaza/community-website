@@ -13,11 +13,6 @@ class ThreadController extends Controller
 
     public function getCatalog(string $board)
     {
-        header('Access-Control-Allow-Origin: *');
-
-header('Access-Control-Allow-Methods: GET, POST');
-
-header("Access-Control-Allow-Headers: X-Requested-With");
         $options = array('http' => array('user_agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36'));
         $context = stream_context_create($options);
         $json = json_decode(file_get_contents('http://a.4cdn.org/' . $board . '/catalog.json', false, $context), true);
@@ -27,7 +22,6 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 
     public function getThreadLink(string $subject, string $board)
     {
-
         foreach ($this->getCatalog($board) as $thread) {
 
             $arr = $thread['threads'];
@@ -57,8 +51,6 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 
     public function getVrgThread()
     {
-
-
         return Response::json([
             'thread' => $this->getThreadContent('/vrg/', 'vg')
         ]);
