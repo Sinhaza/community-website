@@ -18,9 +18,6 @@ onMounted(async () => {
 async function getVrgThread() {
     await axios.get("/vrgthread").then((response) => (
         thread.value = response.data.thread,
-        console.log(getRandomPosts(response.data.thread)),
-
-
         threadImages.value = getThreadImageLinks(response.data.thread)
     ));
 }
@@ -39,64 +36,22 @@ function getThreadImageLinks(thread) {
 function getRandomPosts(thread) {
     return Array.from({ length: Math.floor(3) }).map(x => thread.posts[Math.floor(Math.random() * thread.posts.length)]);
 }
-
-const responsiveOptions = ref([
-    {
-        breakpoint: '1400px',
-        numVisible: 2,
-        numScroll: 1
-    },
-    {
-        breakpoint: '1199px',
-        numVisible: 3,
-        numScroll: 1
-    },
-    {
-        breakpoint: '767px',
-        numVisible: 2,
-        numScroll: 1
-    },
-    {
-        breakpoint: '575px',
-        numVisible: 1,
-        numScroll: 1
-    }
-]);
-
 </script>
 
 
-<style>
-:root {
-    ::-webkit-scrollbar {
-        height: 10px;
-        width: 10px;
-    }
-
-    ::-webkit-scrollbar-track {
-        background: #efefef;
-        border-radius: 6px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #d5d5d5;
-        border-radius: 6px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: #c4c4c4;
-    }
-}
-</style>
+<style></style>
 
 <template>
-    <NavBar></NavBar>
+    <div class="bg-gray-200 font-sans leading-normal tracking-normal">
+        <NavBar></NavBar>
 
-    <div v-if="thread.posts" class="p-2">
-        <Testimonials :testimonials="getRandomPosts(thread)" />
+        <div v-if="thread.posts" class="p-2">
+            <Testimonials :testimonials="getRandomPosts(thread)" />
+        </div>
+
+        <footer class="bg-gray-900">
+            <Footer></Footer>
+        </footer>
     </div>
 
-    <footer class="bg-gray-900">
-        <Footer></Footer>
-    </footer>
 </template>

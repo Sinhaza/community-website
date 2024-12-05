@@ -2,7 +2,7 @@
   <!--Nav-->
   <nav class="bg-white p-4 border-black border-b-2 w-full">
     <div class="container mx-auto flex flex-col md:flex-row items-center">
-      <h1 class="hidden md:flex w-1/3 tracking-tight text-4xl justify-center text-black mx-auto font-bold">
+      <h1 class="hidden md:flex w-1/3 tracking-tight text-4xl justify-end text-black mx-auto font-bold">
         Virtual Reality
       </h1>
       <div class="flex w-1/3 justify-center text-black mx-auto font-bold">
@@ -10,7 +10,7 @@
           <ApplicationLogo></ApplicationLogo>
         </a>
       </div>
-      <h1 class="hidden md:flex w-1/3 tracking-tight text-4xl justify-center text-black mx-auto font-bold">
+      <h1 class="hidden md:flex w-1/3 tracking-tight text-4xl justify-start text-black mx-auto font-bold">
         General
       </h1>
     </div>

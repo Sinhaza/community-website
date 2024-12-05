@@ -21,9 +21,9 @@ function getRandomStarAmount() {
 </script>
 
 <template>
-    <div class="mt-4 font-[sans-serif] bg-white max-w-6xl max-md:max-w-md mx-auto">
+    <div class="mt-4 font-[sans-serif] max-w-6xl max-md:max-w-md mx-auto">
         <div class="mb-12 text-center">
-            <h2 class="text-gray-800 text-3xl font-extrabold">What our happy clients say</h2>
+            <h2 class="font-bold break-normal text-2xl md:text-4xl">Reviews from our members</h2>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6">
