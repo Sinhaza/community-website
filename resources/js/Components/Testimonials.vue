@@ -22,14 +22,14 @@ function getRandomStarAmount() {
 
 <template>
     <div class="mt-4 font-[sans-serif] max-w-6xl max-md:max-w-md mx-auto">
+
         <div class="mb-12 text-center">
-            <h2 class="font-bold break-normal text-2xl md:text-4xl">Reviews from our members</h2>
+            <h2 class="font-bold break-normal text-2xl md:text-4xl">Hear what our community has to say</h2>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6">
-
             <div v-for="testimonial in testimonials"
-                class="p-6 rounded-lg mx-auto bg-gray-100 relative max-w-72 max-h-96">
+                class="p-6 rounded-lg mx-auto bg-gray-100 relative max-w-60 lg:max-w-80 max-h-96">
                 <div class="flex flex-wrap items-center gap-4">
                     <img :src="getRandomAvatar()" class="w-14 h-14 rounded-full border-4 border-white" />
                     <div>

@@ -10,29 +10,36 @@
           <ApplicationLogo></ApplicationLogo>
         </a>
       </div>
-      <h1 class="hidden md:flex w-1/3 tracking-tight text-4xl justify-start text-black mx-auto font-bold">
+      <h1
+        class="hidden md:flex w-1/3 tracking-tight text-4xl md:justify-center lg:justify-start text-black mx-auto font-bold">
         General
       </h1>
     </div>
   </nav>
   <!--slide in nav-->
-  <div id="header" class="bg-gray-900 fixed w-full z-10 top-0 hidden animated" style="opacity: .95;">
+  <div id="header" class="bg-gray-900 fixed w-full z-50 top-0 hidden animated" style="opacity: .95;">
     <div class="bg-white">
       <div class="flex flex-wrap items-center content-center">
-        <div class="flex w-1/3 justify-start text-white font-extrabold">
-          <a class="flex text-gray-900  no-underline hover:text-gray-900 hover:no-underline py-1 pl-2" href="#">
-            <img class="h-6 w-auto text-black" src="/images/logo/vrgbadge2.png" />
+        <div class="flex w-1/3 justify-start content-center">
+          <a class="inline-block text-white no-underline hover:text-white hover:underline text-center h-10 w-10 p-2 md:h-auto md:w-16 md:p-4"
+            href="#">
+            <img class="text-black" src="/images/logo/vrgbadge2.png" />
           </a>
         </div>
 
-        <div class="w-1/3 justify-center">
-          <h1 class="flex mx-auto tracking-tight ml-2 self-center text-2xl justify-center text-black font-extrabold">
-            /vrg/
-          </h1>
+
+        <div class="flex w-1/3 justify-center content-center">
+
+          <a class="inline-block text-white no-underline hover:text-white hover:underline text-center h-10 w-10 p-2 md:h-auto md:w-16 md:p-4"
+            href="#">
+            <h1 class="flex mx-auto tracking-tight self-center text-2xl justify-center text-black font-extrabold">
+              /vrg/
+            </h1>
+          </a>
+
         </div>
 
         <div class="flex w-1/3 justify-end content-center">
-          <p class="hidden sm:block mr-3 text-center h-14 p-4 text-xs"><span class="pr-2"></span></p>
           <a class="inline-block text-white no-underline hover:text-white hover:underline text-center h-10 w-10 p-2 md:h-auto md:w-16 md:p-4"
             href="https://boards.4channel.org/vg/#search/s=vrg">
             <svg version="1.1" id="Clover" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512"

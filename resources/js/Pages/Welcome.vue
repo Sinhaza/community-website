@@ -6,6 +6,7 @@ import axios from "axios";
 import NavBar from "@/Components/NavBar.vue";
 import Footer from "@/Components/Footer.vue";
 import Testimonials from "@/Components/Testimonials.vue";
+import Trailer from "@/Components/VideoWithText.vue";
 
 let thread = ref([])
 let threadImages = ref([])
@@ -44,6 +45,8 @@ function getRandomPosts(thread) {
 <template>
     <div class="bg-gray-200 font-sans leading-normal tracking-normal">
         <NavBar></NavBar>
+
+        <Trailer></Trailer>
 
         <div v-if="thread.posts" class="p-2">
             <Testimonials :testimonials="getRandomPosts(thread)" />
