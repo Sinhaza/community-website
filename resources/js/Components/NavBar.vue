@@ -40,8 +40,8 @@
         </div>
 
         <div class="flex w-1/3 justify-end content-center">
-          <a class="inline-block text-white no-underline hover:text-white hover:underline text-center h-10 w-10 p-2 md:h-auto md:w-16 md:p-4"
-            href="https://boards.4channel.org/vg/#search/s=vrg">
+          <a
+            class="inline-block text-white no-underline hover:text-white hover:underline text-center h-10 w-10 p-2 md:h-auto md:w-16 md:p-4">
             <svg version="1.1" id="Clover" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512"
               enable-background="new 0 0 512 512" xml:space="preserve">
               <path fill="none" stroke="#006600" stroke-width="37.5776" stroke-miterlimit="10"
