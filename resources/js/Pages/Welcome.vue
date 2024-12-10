@@ -103,7 +103,7 @@ function getRandomPosts(thread) {
                         class="max-w-md mx-auto mt-3 font-bold text-base text-gray-500 sm:text-lg md:mt-5 md:text-4xl md:max-w-3xl">
                         Not with us!
                     </p>
-                    <p class="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    <p class="max-w-md mx-auto mt-3 text-base text-gray-800 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
                         Re-experience your golden highschool days with us together in VRChat
                     </p>
                     <div class="mt-5 sm:flex md:mt-8">
