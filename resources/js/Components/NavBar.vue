@@ -30,8 +30,8 @@
 
         <div class="flex w-1/3 justify-center content-center">
 
-          <a class="inline-block text-white no-underline hover:text-white hover:underline text-center h-10 w-10 p-2 md:h-auto md:w-16 md:p-4"
-            href="#">
+          <a
+            class="inline-block text-white no-underline hover:text-white hover:underline text-center h-10 w-10 p-2 md:h-auto md:w-16 md:p-4">
             <h1 class="flex mx-auto tracking-tight self-center text-2xl justify-center text-black font-extrabold">
               /vrg/
             </h1>

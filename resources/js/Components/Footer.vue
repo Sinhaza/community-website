@@ -14,7 +14,7 @@ import ApplicationLogo from "@/Components/ApplicationLogo.vue";
         </div>
 
         <p class="max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-400 sm:max-w-xs sm:mx-0 sm:text-left">
-          Virtual connections, Real people.
+          Virtual games, Real people.
         </p>
 
         <ul class="flex md:flex-row flex-column justify-center gap-6 mt-8 md:gap-8 sm:justify-start">
