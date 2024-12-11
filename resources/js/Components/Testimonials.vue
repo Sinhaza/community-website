@@ -31,7 +31,6 @@ function getRandomStarAmount() {
             <div v-for="testimonial in testimonials"
                 class="p-6 rounded-lg mx-auto bg-gray-100 relative max-w-60 lg:max-w-80 max-h-96">
                 <div class="flex flex-wrap items-center gap-4">
-                    <img :src="getRandomAvatar()" class="w-14 h-14 rounded-full border-4 border-white" />
                     <div>
                         <h4 class="text-gray-800 text-sm whitespace-nowrap font-bold">{{ testimonial.name }}</h4>
                         <p class="mt-0.5 text-xs text-gray-600">{{ getDate(testimonial.time) }}</p>

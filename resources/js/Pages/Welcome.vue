@@ -69,7 +69,7 @@ function getRandomPosts(thread) {
                             Re-experience your golden highschool days with us together in VRChat
                         </p>
                         <div class="mt-5 sm:flex md:mt-8">
-                            <div class="rounded-md shadow"><a
+                            <div class="rounded-md shadow"><a target="_blank"
                                     href="https://discord.com/servers/vrchat-189511567539306508"
                                     class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-500 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10">
                                     Start here!
@@ -156,7 +156,8 @@ function getRandomPosts(thread) {
                             Use our very own Tierlist web application made for us, by us!
                         </p>
                         <div class="mt-5 sm:flex md:place-content-end md:mt-8">
-                            <div class="rounded-md shadow"><a href="https://vrg-tierlist.misakanet.page/"
+                            <div class="rounded-md shadow"><a target="_blank"
+                                    href="https://vrg-tierlist.misakanet.page/"
                                     class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-500 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10">
                                     Visit the site!
                                 </a></div>
