@@ -1,12 +1,46 @@
 <template>
   <!--Nav-->
   <nav class="bg-white p-4 border-black border-b-2 w-full">
+    <div class="flex flex-wrap items-center content-center">
+      <div class="flex content-center">
+        <a class="inline-block no-underline text-black hover:text-gray-200 text-center" target="_blank"
+          href="https://vrg-tierlist.misakanet.page/">
+          <h1 class="hidden self-center  md:flex tracking-tight text-4xl justify-center  mx-auto font-bold">
+            Tierlist
+          </h1>
+        </a>
+      </div>
+
+
+      <div class="flex flex-1 justify-center content-center">
+        <h1 class="hidden self-center md:flex tracking-tight text-4xl justify-end text-black mx-auto font-bold">
+          Virtual Reality
+        </h1>
+        <a href="/">
+          <ApplicationLogo></ApplicationLogo>
+        </a>
+        <h1 class="hidden self-center  md:flex tracking-tight text-4xl justify-center text-black mx-auto font-bold">
+          General
+        </h1>
+      </div>
+
+      <div class="flex content-center">
+        <a class="inline-block no-underline text-black hover:text-gray-200 text-center" href="/members">
+          <h1 class="hidden self-center  md:flex tracking-tight text-4xl justify-center  mx-auto font-bold">
+            Members
+          </h1>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <nav class="bg-white p-4 border-black border-b-2 w-full">
     <div class="container mx-auto flex flex-col md:flex-row items-center">
       <h1 class="hidden md:flex w-1/3 tracking-tight text-4xl justify-end text-black mx-auto font-bold">
         Virtual Reality
       </h1>
       <div class="flex w-1/3 justify-center text-black mx-auto font-bold">
-        <a class="flex no-underline" href="#">
+        <a class="flex no-underline" href="/">
           <ApplicationLogo></ApplicationLogo>
         </a>
       </div>
@@ -15,7 +49,7 @@
         General
       </h1>
     </div>
-  </nav>
+  </nav> -->
   <!--slide in nav-->
   <div id="header" class="bg-gray-900 fixed w-full z-50 top-0 hidden animated" style="opacity: .95;">
     <div class="bg-white">

@@ -92,8 +92,8 @@ import ApplicationLogo from "@/Components/ApplicationLogo.vue";
               </li>
 
               <li>
-                <a class="text-white transition hover:text-white/75" href="/">
-                  Meet the Team
+                <a class="text-white transition hover:text-white/75" href="/members">
+                  Meet the community
                 </a>
               </li>
 
