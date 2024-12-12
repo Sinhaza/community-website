@@ -8,9 +8,9 @@ import Footer from "@/Components/Footer.vue";
     <div class="bg-gray-200 font-sans leading-normal tracking-normal">
         <NavBar></NavBar>
         <div
-            class="grid grid-cols-[1fr] gap-10 max-w-[calc(100vw-1rem)] md:max-w-[min(calc(100vw-1rem),80rem)] xl:max-w-[min(calc(100vw-1rem),80rem)] mx-auto">
+            class="grid  grid-cols-[1fr] gap-10 max-w-[calc(100vw-1rem)] md:max-w-[min(calc(100vw-1rem),80rem)] xl:max-w-[min(calc(100vw-1rem),80rem)] mx-auto">
             <a href="#"
-                class="rounded-md border-2 border-white bg-white p-4 text-slate-800 ease-in-out hover:border-2 hover:border-slate-800 dark:border-slate-800 dark:bg-slate-900 dark:text-white dark:hover:border-white">
+                class="rounded-md hover:scale-105 m-8 transition duration-500 border-2 border-white bg-white p-4 text-slate-800 ease-in-out dark:border-slate-800 dark:bg-slate-900 dark:text-white dark:hover:border-white">
                 <h2 class="text-2xl font-semibold tracking-wide">
                     Naam
                 </h2>
