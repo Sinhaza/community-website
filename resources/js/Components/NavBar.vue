@@ -34,29 +34,13 @@
     </div>
   </nav>
 
-  <!-- <nav class="bg-white p-4 border-black border-b-2 w-full">
-    <div class="container mx-auto flex flex-col md:flex-row items-center">
-      <h1 class="hidden md:flex w-1/3 tracking-tight text-4xl justify-end text-black mx-auto font-bold">
-        Virtual Reality
-      </h1>
-      <div class="flex w-1/3 justify-center text-black mx-auto font-bold">
-        <a class="flex no-underline" href="/">
-          <ApplicationLogo></ApplicationLogo>
-        </a>
-      </div>
-      <h1
-        class="hidden md:flex w-1/3 tracking-tight text-4xl md:justify-center lg:justify-start text-black mx-auto font-bold">
-        General
-      </h1>
-    </div>
-  </nav> -->
   <!--slide in nav-->
   <div id="header" class="bg-gray-900 fixed w-full z-50 top-0 hidden animated" style="opacity: .95;">
     <div class="bg-white">
       <div class="flex flex-wrap items-center content-center">
         <div class="flex w-1/3 justify-start content-center">
           <a class="inline-block text-white no-underline hover:text-white hover:underline text-center h-10 w-10 p-2 md:h-auto md:w-16 md:p-4"
-            href="#">
+            href="/">
             <img class="text-black" src="/images/logo/vrgbadge2.png" />
           </a>
         </div>
