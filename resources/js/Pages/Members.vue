@@ -2,6 +2,7 @@
 import { onMounted, ref } from "vue";
 
 import NavBar from "@/Components/NavBar.vue";
+import Footer from "@/Components/Footer.vue";
 
 
 let users = ref([])
@@ -59,5 +60,9 @@ function getTierlistAvatar(img_path) {
                 </div>
             </div>
         </div>
+
+        <footer class="bg-gray-900">
+            <Footer></Footer>
+        </footer>
     </div>
 </template>

@@ -19,6 +19,11 @@ Route::get('/members', function () {
     ]);
 });
 
+Route::get('/career', function () {
+    return Inertia::render('Career', [
+    ]);
+});
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
