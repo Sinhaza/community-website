@@ -1,6 +1,12 @@
 <script setup>
+import { onMounted, ref } from "vue";
+
 import NavBar from "@/Components/NavBar.vue";
 import Footer from "@/Components/Footer.vue";
+
+const jobs = ref([
+    { name: 'Janitor', salary: '0.00', location: 'The thread', description: 'You do it for free', schedule: 'fulltime' },
+])
 
 </script>
 
@@ -9,10 +15,10 @@ import Footer from "@/Components/Footer.vue";
         <NavBar></NavBar>
         <div
             class="grid  grid-cols-[1fr] gap-10 max-w-[calc(100vw-1rem)] md:max-w-[min(calc(100vw-1rem),80rem)] xl:max-w-[min(calc(100vw-1rem),80rem)] mx-auto">
-            <a href="#"
+            <a v-for="job in jobs" href="#"
                 class="rounded-md hover:scale-105 m-8 transition duration-500 border-2 border-white bg-white p-4 text-slate-800 ease-in-out dark:border-slate-800 dark:bg-slate-900 dark:text-white dark:hover:border-white">
                 <h2 class="text-2xl font-semibold tracking-wide">
-                    Naam
+                    {{ job.name }}
                 </h2>
                 <div class="mt-5 flex flex-wrap gap-8 text-sm font-normal text-gray-800 dark:text-white md:text-base">
                     <div class="flex items-center gap-2">
@@ -22,7 +28,7 @@ import Footer from "@/Components/Footer.vue";
                                 d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z">
                             </path>
                         </svg>
-                        <span>$Geld</span>
+                        <span>{{ job.salary }}</span>
                     </div>
                     <div class="flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -33,7 +39,7 @@ import Footer from "@/Components/Footer.vue";
                                 d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"></path>
                         </svg>
 
-                        <span>Locatie</span>
+                        <span>{{ job.location }}</span>
                     </div>
                     <div class="flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -43,12 +49,12 @@ import Footer from "@/Components/Footer.vue";
                             </path>
                         </svg>
 
-                        <span>Gisteren</span>
+                        <span>{{ job.schedule }}</span>
                     </div>
                 </div>
 
                 <div class="mt-5 flex gap-8 text-sm font-normal text-slate-500">
-                    tekst
+                    {{ job.description }}
                 </div>
             </a>
         </div>
