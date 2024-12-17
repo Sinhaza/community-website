@@ -3,7 +3,7 @@ import { onMounted, ref } from "vue";
 
 import NavBar from "@/Components/NavBar.vue";
 import Footer from "@/Components/Footer.vue";
-
+import UserCard from "@/Components/UserCard.vue";
 
 let users = ref([])
 
@@ -15,10 +15,6 @@ async function getTierlistUsers() {
     await axios.get("/tierlistuser").then((response) => (
         users.value = response.data.users
     ));
-}
-
-function getTierlistAvatar(img_path) {
-    return 'https://vrg-tierlist.misakanet.page/images/' + img_path;
 }
 
 </script>
@@ -46,16 +42,7 @@ function getTierlistAvatar(img_path) {
 
                     <div
                         class="grid lg:grid-cols-[1fr_1fr_1fr_1fr] md:grid-cols-[1fr_1fr_1fr] grid-cols-[1fr] gap-6 max-md:justify-center mt-12">
-                        <div v-for="user in users"
-                            class="border drop-shadow-md p-6 w-full  mx-auto bg-gray-100 max-w-60 lg:max-w-80 overflow-hidden">
-                            <img :src="getTierlistAvatar(user.img_path)" class="w-full rounded-lg h-56 object-cover" />
-
-                            <div class="p-4">
-                                <p
-                                    class="text-ellipsis overflow-hidden mx-auto mt-3 font-bold text-blue-500 sm:text-lg md:mt-5 md:text-4xl md:max-w-3xl">
-                                    {{ user.name }}</p>
-                            </div>
-                        </div>
+                        <UserCard :users=users></UserCard>
                     </div>
                 </div>
             </div>
