@@ -6,8 +6,8 @@ const props = defineProps({
 </script>
 
 <template>
-    <a v-for="job in jobs" href="#"
-        class="rounded-md hover:scale-105 m-8 transition duration-500 border-2 border-white bg-white p-4 text-slate-800 ease-in-out dark:border-slate-800 dark:bg-slate-900 dark:text-white dark:hover:border-white">
+    <a v-for="job in jobs" :href=job.link target="_blank"
+        class="rounded-md hover:scale-105 m-8 my-4 transition duration-500 border-2 border-white bg-white p-4 text-slate-800 ease-in-out dark:border-slate-800 dark:bg-slate-900 dark:text-white dark:hover:border-white">
         <h2 class="text-2xl font-semibold tracking-wide">
             {{ job.name }}
         </h2>
