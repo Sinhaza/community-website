@@ -11,7 +11,7 @@ function getTierlistAvatar(img_path) {
 
 <template>
     <div v-for="user in users"
-        class="border drop-shadow-md p-6 w-full  mx-auto bg-gray-100 max-w-60 lg:max-w-80 overflow-hidden">
+        class="border hover:scale-105 duration-500 drop-shadow-md p-6 w-full  mx-auto bg-gray-100 max-w-60 lg:max-w-80 overflow-hidden">
         <img :src="getTierlistAvatar(user.img_path)" class="w-full rounded-lg h-56 object-cover" />
 
         <div class="p-4">

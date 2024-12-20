@@ -93,7 +93,7 @@ import ApplicationLogo from "@/Components/ApplicationLogo.vue";
 
               <li>
                 <a class="text-white transition hover:text-white/75" href="/members">
-                  Meet the community
+                  Meet the Community
                 </a>
               </li>
 
@@ -104,7 +104,7 @@ import ApplicationLogo from "@/Components/ApplicationLogo.vue";
               </li>
 
               <li>
-                <a class="text-white transition hover:text-white/75" href="/">
+                <a class="text-white transition hover:text-white/75" href="/career">
                   Careers
                 </a>
               </li>
@@ -118,14 +118,14 @@ import ApplicationLogo from "@/Components/ApplicationLogo.vue";
           <nav class="mt-8">
             <ul class="space-y-4 text-sm">
               <li>
-                <a class="text-white transition hover:text-white/75" href="/">
-                  Web Development
+                <a class="text-white transition hover:text-white/75" href="https://vrg.party/worlds.html">
+                  VRChat worlds
                 </a>
               </li>
 
               <li>
-                <a class="text-white transition hover:text-white/75" href="/">
-                  Web Design
+                <a class="text-white transition hover:text-white/75" href="https://vrg-tierlist.misakanet.page/">
+                  Tierlist
                 </a>
               </li>
 
