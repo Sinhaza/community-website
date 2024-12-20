@@ -87,7 +87,7 @@ import ApplicationLogo from "@/Components/ApplicationLogo.vue";
             <ul class="space-y-4 text-sm">
               <li>
                 <a class="text-white transition hover:text-white/75" href="/history">
-                  Company History
+                  Community History
                 </a>
               </li>
 
