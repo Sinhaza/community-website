@@ -138,7 +138,7 @@ onMounted(() => {
           </li>
           <li class='max-lg:border-b max-lg:py-3 px-3'><a
               class="inline-block no-underline text-black hover:text-gray-200 text-center"
-              href="https://vrg-tierlist.misakanet.page/">
+              href="https://vrg-tierlist.misakanet.page/" target="_blank">
               <h1 class="hidden self-center  md:flex tracking-tight text-4xl justify-center  mx-auto font-bold">
                 Tierlist
               </h1>

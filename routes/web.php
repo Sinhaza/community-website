@@ -19,6 +19,11 @@ Route::get('/members', function () {
     ]);
 });
 
+Route::get('/history', function () {
+    return Inertia::render('History', [
+    ]);
+});
+
 Route::get('/career', function () {
     return Inertia::render('Career', [
     ]);

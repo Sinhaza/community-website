@@ -86,7 +86,7 @@ import ApplicationLogo from "@/Components/ApplicationLogo.vue";
           <nav class="mt-8">
             <ul class="space-y-4 text-sm">
               <li>
-                <a class="text-white transition hover:text-white/75" href="/">
+                <a class="text-white transition hover:text-white/75" href="/history">
                   Company History
                 </a>
               </li>
@@ -118,7 +118,8 @@ import ApplicationLogo from "@/Components/ApplicationLogo.vue";
           <nav class="mt-8">
             <ul class="space-y-4 text-sm">
               <li>
-                <a class="text-white transition hover:text-white/75" href="https://vrg.party/worlds.html">
+                <a class="text-white transition hover:text-white/75" target="_blank"
+                  href="https://vrg.party/worlds.html">
                   VRChat worlds
                 </a>
               </li>
