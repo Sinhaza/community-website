@@ -8,6 +8,7 @@ import JobCard from "@/Components/JobCard.vue";
 const jobs = ref([
     { name: 'Janitor', salary: 'Hotpockets', location: 'The thread', link: 'https://redditinc.com/careers', description: 'We are seeking a reliable and detail-oriented Internet Forum Moderator to oversee discussions, enforce community guidelines, and ensure a positive user experience. Responsibilities include reviewing posts, addressing rule violations, managing spam, and fostering healthy engagement. Strong communication skills, impartial judgment, and familiarity with online communities are essential.', schedule: 'fulltime' },
     { name: 'Schizophrenic', salary: '(you)', location: 'Remote', link: 'https://boards.4chan.org/x/', description: 'We are seeking a 4chan-certified schizophrenic individual to join our team of sane people. Must possess unparalleled skills in connecting unrelated dots, crafting wild theories, and derailing conversations with offbeat genius. A strong familiarity with "the glowies" and deep-seated distrust of mainstream narratives is a plus.', schedule: "Whenever you're awake" },
+    { name: 'Social Worker', salary: 'Competitive', location: 'On-site', link: 'https://boards.4chan.org/adv/', description: 'Seeking a dedicated social worker to provide support and guidance to members of a vibrant, unconventional online community. Responsibilities include engaging empathetically with individuals experiencing mental health challenges, offering resources, and maintaining a calm, composed demeanor in high-stress digital interactions.', schedule: "9/5" },
 ])
 
 </script>
@@ -23,11 +24,11 @@ const jobs = ref([
                     <div class="text-center">
                         <h2
                             class="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
-                            Meet our members
+                            Wagie time?
                         </h2>
                         <p
                             class="max-w-md mx-auto mt-3 font-bold text-base text-gray-500 sm:text-lg md:mt-5 md:text-4xl md:max-w-3xl">
-                            Explore our vast number of members who made this place into what it is today
+                            Reject your NEET ways and cage yourself into a wage
                         </p>
                     </div>
                 </div>
