@@ -148,6 +148,11 @@ onMounted(() => {
       </div>
 
       <div class='flex items-center mx-auto md:mx-0 ml-auto space-x-6'>
+        <a class="inline-block no-underline text-black hover:text-gray-200 text-center" href="/history">
+          <h1 class="self-center text-2xl  md:flex tracking-tight md:text-4xl justify-center  mx-auto font-bold">
+            History
+          </h1>
+        </a>
         <a class="inline-block no-underline text-black hover:text-gray-200 text-center" href="/members">
           <h1 class="self-center text-2xl  md:flex tracking-tight md:text-4xl justify-center  mx-auto font-bold">
             Members
