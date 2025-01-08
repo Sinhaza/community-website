@@ -120,7 +120,8 @@ import ApplicationLogo from "@/Components/ApplicationLogo.vue";
 
           <ul class="mt-8 space-y-4 text-sm">
             <li>
-              <a class="flex items-center justify-center sm:justify-start gap-1.5 group" href="mailto:ivanadai@vrg.com">
+              <a class="flex items-center justify-center sm:justify-start gap-1.5 group"
+                href="mailto:ayyleighmao@gmail.com">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white shrink-0" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round"
@@ -128,7 +129,7 @@ import ApplicationLogo from "@/Components/ApplicationLogo.vue";
                 </svg>
 
                 <span class="text-white transition group-hover:text-white/75">
-                  ivanadai@vrg.com
+                  ayyleighmao@gmail.com
                 </span>
               </a>
             </li>

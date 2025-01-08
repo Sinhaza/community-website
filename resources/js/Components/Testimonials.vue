@@ -2,15 +2,12 @@
 defineProps({
     testimonials: Array
 })
+
 let remaining = 0
 let positiveStars = 0
 
 function getDate(unixTimestamp) {
-    return new Date(unixTimestamp * 1000);
-}
-
-function getRandomAvatar() {
-    return 'https://readymadeui.com/team-' + Math.floor(Math.random() * 5 + 1) + '.webp';
+    return new Date(unixTimestamp * 1000).toLocaleString();
 }
 
 function getRandomStarAmount() {
