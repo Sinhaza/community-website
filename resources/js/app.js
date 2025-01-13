@@ -8,7 +8,7 @@ import { ZiggyVue } from "../../vendor/tightenco/ziggy";
 import PrimeVue from 'primevue/config';
 import Aura from '@primevue/themes/aura';
 
-const appName = import.meta.env.VITE_APP_NAME || "Laravel";
+const appName = import.meta.env.VITE_APP_NAME || "Virtual Reality General";
 
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,
